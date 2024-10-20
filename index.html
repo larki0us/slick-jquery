@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slick Carousel Example</title>
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <style>
+        /* Additional custom styles (optional) */
+        .slick-slide {
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Slick Carousel Example</h1>
+    
+    <div class="your-slider" style="width: 50vw; height: 50vh;">
+        <div><img src="path/to/image1.jpg" alt="Image 1"></div>
+        <div><img src="path/to/image2.jpg" alt="Image 2"></div>
+        <div><img src="path/to/image3.jpg" alt="Image 3"></div>
+        <div><img src="path/to/image4.jpg" alt="Image 4"></div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.your-slider').slick({
+                dots: true,             
+                arrows: true,           
+                infinite: true,        
+                speed: 500,            
+                slidesToShow: 1,       
+                slidesToScroll: 1,     
+                autoplay: true,        
+                autoplaySpeed: 2000,   
+            });
+        });
+    </script>
+</body>
+</html>
